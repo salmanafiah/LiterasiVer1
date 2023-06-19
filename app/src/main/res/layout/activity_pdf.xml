@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PDFActivity">
+
+    <ProgressBar
+        android:id="@+id/pdfViewProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:visibility="gone" />
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:textColor="@color/textcolor2"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:textColor="@color/textcolor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape"
+            android:onClick="startChronometer"
+            android:text="Mulai Baca"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button" />
+
+        <Button
+            android:textColor="@color/textcolor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape"
+            android:onClick="pauseChronometer"
+            android:text="Selesai Baca"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

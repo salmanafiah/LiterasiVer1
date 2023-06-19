@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "200890656818",
+    "firebase_url": "https://literasi-d85dd.firebaseio.com",
+    "project_id": "literasi-d85dd",
+    "storage_bucket": "literasi-d85dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200890656818:android:21c47dcd43212700",
+        "android_client_info": {
+          "package_name": "com.example.hopes.literasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200890656818-b1gvoe0ugdmeda1h02vpkc3fko6kh3s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7JzLmBR1-_P-OhkYRVDdMhW3UNL8YqdM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
